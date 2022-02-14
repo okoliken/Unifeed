@@ -1,0 +1,338 @@
+@import "mixins";
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+body {
+  font-family: "Manrope", sans-serif;
+}
+header {
+  padding: 20px;
+  .unifeed-logo {
+    @include flex-items;
+    .menu {
+      display: block;
+    }
+  }
+  .nav-desktop {
+    display: none;
+  }
+}
+
+.weekly-newsletters-con {
+  padding: 30px 20px;
+  .img-con {
+    max-width: 800px;
+    width: 100%;
+    .main-article-img {
+      object-fit: contain;
+      width: 800px;
+      max-height: 400px;
+      max-width: 100%;
+    }
+  }
+  .weekly-newsletters {
+    padding: 20px 0 0 0;
+    text-align: left;
+    .heading {
+      font-size: 34px;
+    }
+    .headlines {
+      padding: 20px 0;
+      font-size: 23px;
+    }
+    .jessica-andrews {
+      width: 80px;
+      padding-top: 20px;
+      height: 80px;
+      width: 100%;
+      @include flex-items-center;
+      .jessica-andrews-img {
+        object-fit: contain;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+      }
+      .jessica {
+        padding-left: 20px;
+        span {
+          display: block;
+          font-size: 20px;
+        }
+        span.bold {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+.card-container {
+  padding: 30px 20px;
+  max-width: 600px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  .card {
+    margin-bottom: 63px;
+    .img {
+      max-width: 600px;
+      width: 100%;
+      .card-img {
+        max-width: 600px;
+        max-height: 500px;
+        width: 100%;
+      }
+    }
+    .card-body {
+      h1 {
+        padding: 15px 0;
+      }
+      p {
+        padding-bottom: 8px;
+        font-size: 20px;
+      }
+      .spencer-david {
+        width: 80px;
+        padding-top: 20px;
+        height: 80px;
+        width: 100%;
+
+        @include flex-items-center;
+        .spencer-david-img {
+          object-fit: contain;
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+        }
+        .spencer {
+          padding-left: 20px;
+          span {
+            display: block;
+            font-size: 20px;
+          }
+          span.bold {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+footer {
+  padding: 20px;
+}
+
+@media (min-width: 580px) {
+  header {
+    @include flex-items;
+    padding: 20px;
+    .unifeed-logo {
+      .menu {
+        display: none;
+      }
+    }
+    .nav-desktop {
+      display: block;
+      @include flex-items;
+      li {
+        margin-right: 25px;
+        text-transform: capitalize;
+      }
+      a {
+        color: #333;
+      }
+      a.suscribe {
+        padding: 15px 25px;
+        font-weight: 700;
+        border-radius: 7px;
+        background-color: #ee7c0e;
+      }
+    }
+  }
+  .card-container {
+    padding: 20px;
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 800px) {
+  header {
+    padding-top: 40px;
+    .unifeed-logo {
+      padding-left: 65px;
+    }
+    .nav-desktop {
+      margin-right: 100px;
+      a {
+        font-size: 20px;
+      }
+      a.suscribe {
+        padding: 15px 32px;
+        font-weight: 700;
+        border-radius: 7px;
+        background-color: #ee7c0e;
+      }
+    }
+  }
+  .weekly-newsletters-con {
+    margin-top: 40px;
+    @include flex-items;
+    padding: 20px;
+    .img-con {
+      flex: 2;
+      .main-article-img {
+        object-fit: contain;
+        width: 800px;
+        height: 280px;
+      }
+    }
+    .weekly-newsletters {
+      flex: 3;
+      .heading {
+        font-size: 34px;
+      }
+      .headlines {
+        padding: 20px 0;
+        font-size: 20px;
+        width: 80%;
+      }
+      .jessica-andrews {
+        width: 80px;
+        padding-top: 20px;
+        height: 80px;
+        width: 100%;
+        @include flex-items-center;
+        .jessica-andrews-img {
+          object-fit: contain;
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+        }
+        .jessica {
+          padding-left: 20px;
+          span {
+            display: block;
+            font-size: 18px;
+          }
+          span.bold {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+  .card-container {
+    width: 100%;
+    padding: 80px 80px;
+    max-width: 100%;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    .card {
+      .card-body {
+        h1 {
+          padding: 15px 0;
+        }
+        p {
+          padding-bottom: 8px;
+          font-size: 20px;
+        }
+        .spencer-david {
+          width: 80px;
+          padding-top: 20px;
+          max-height: 500px;
+          height: 80px;
+          width: 100%;
+          @include flex-items-center;
+          .spencer-david-img {
+            object-fit: contain;
+            width: 60px;
+            max-height: 380px;
+            height: 60px;
+            border-radius: 50%;
+          }
+          .spencer {
+            padding-left: 20px;
+            span {
+              display: block;
+              font-size: 18px;
+            }
+            span.bold {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+  footer {
+    div {
+      padding: 0 35px;
+      @include flex-items;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .card-container {
+    width: 100%;
+    padding: 80px 80px;
+    max-width: 100%;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    .card {
+      .card-body {
+        h1 {
+          padding: 15px 0;
+        }
+        p {
+          padding-bottom: 8px;
+          font-size: 20px;
+        }
+        .spencer-david {
+          width: 80px;
+          padding-top: 20px;
+          height: 80px;
+          width: 100%;
+          max-height: 500px;
+          @include flex-items-center;
+          .spencer-david-img {
+            object-fit: contain;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+          }
+          .spencer {
+            padding-left: 20px;
+            span {
+              display: block;
+              font-size: 18px;
+            }
+            span.bold {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1110px) {
+  .weekly-newsletters-con {
+    .img-con {
+      flex: 4;
+    }
+    .weekly-newsletters {
+      flex: 3;
+    }
+  }
+}

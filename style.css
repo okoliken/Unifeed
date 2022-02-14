@@ -1,0 +1,438 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+header {
+  padding: 20px;
+}
+
+header .unifeed-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .unifeed-logo .menu {
+  display: block;
+}
+
+header .nav-desktop {
+  display: none;
+}
+
+.weekly-newsletters-con {
+  padding: 30px 20px;
+}
+
+.weekly-newsletters-con .img-con {
+  max-width: 800px;
+  width: 100%;
+}
+
+.weekly-newsletters-con .img-con .main-article-img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 800px;
+  max-height: 400px;
+  max-width: 100%;
+}
+
+.weekly-newsletters-con .weekly-newsletters {
+  padding: 20px 0 0 0;
+  text-align: left;
+}
+
+.weekly-newsletters-con .weekly-newsletters .heading {
+  font-size: 34px;
+}
+
+.weekly-newsletters-con .weekly-newsletters .headlines {
+  padding: 20px 0;
+  font-size: 23px;
+}
+
+.weekly-newsletters-con .weekly-newsletters .jessica-andrews {
+  width: 80px;
+  padding-top: 20px;
+  height: 80px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.weekly-newsletters-con .weekly-newsletters .jessica-andrews .jessica-andrews-img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.weekly-newsletters-con .weekly-newsletters .jessica-andrews .jessica {
+  padding-left: 20px;
+}
+
+.weekly-newsletters-con .weekly-newsletters .jessica-andrews .jessica span {
+  display: block;
+  font-size: 20px;
+}
+
+.weekly-newsletters-con .weekly-newsletters .jessica-andrews .jessica span.bold {
+  font-weight: bold;
+}
+
+.card-container {
+  padding: 30px 20px;
+  max-width: 600px;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+}
+
+.card-container .card {
+  margin-bottom: 63px;
+}
+
+.card-container .card .img {
+  max-width: 600px;
+  width: 100%;
+}
+
+.card-container .card .img .card-img {
+  max-width: 600px;
+  max-height: 500px;
+  width: 100%;
+}
+
+.card-container .card .card-body h1 {
+  padding: 15px 0;
+}
+
+.card-container .card .card-body p {
+  padding-bottom: 8px;
+  font-size: 20px;
+}
+
+.card-container .card .card-body .spencer-david {
+  width: 80px;
+  padding-top: 20px;
+  height: 80px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-container .card .card-body .spencer-david .spencer-david-img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.card-container .card .card-body .spencer-david .spencer {
+  padding-left: 20px;
+}
+
+.card-container .card .card-body .spencer-david .spencer span {
+  display: block;
+  font-size: 20px;
+}
+
+.card-container .card .card-body .spencer-david .spencer span.bold {
+  font-weight: bold;
+}
+
+footer {
+  padding: 20px;
+}
+
+@media (min-width: 580px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 20px;
+  }
+  header .unifeed-logo .menu {
+    display: none;
+  }
+  header .nav-desktop {
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .nav-desktop li {
+    margin-right: 25px;
+    text-transform: capitalize;
+  }
+  header .nav-desktop a {
+    color: #333;
+  }
+  header .nav-desktop a.suscribe {
+    padding: 15px 25px;
+    font-weight: 700;
+    border-radius: 7px;
+    background-color: #ee7c0e;
+  }
+  .card-container {
+    padding: 20px;
+    width: 100%;
+    max-width: 100%;
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 20px;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 800px) {
+  header {
+    padding-top: 40px;
+  }
+  header .unifeed-logo {
+    padding-left: 65px;
+  }
+  header .nav-desktop {
+    margin-right: 100px;
+  }
+  header .nav-desktop a {
+    font-size: 20px;
+  }
+  header .nav-desktop a.suscribe {
+    padding: 15px 32px;
+    font-weight: 700;
+    border-radius: 7px;
+    background-color: #ee7c0e;
+  }
+  .weekly-newsletters-con {
+    margin-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 20px;
+  }
+  .weekly-newsletters-con .img-con {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+  }
+  .weekly-newsletters-con .img-con .main-article-img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 800px;
+    height: 280px;
+  }
+  .weekly-newsletters-con .weekly-newsletters {
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+  }
+  .weekly-newsletters-con .weekly-newsletters .heading {
+    font-size: 34px;
+  }
+  .weekly-newsletters-con .weekly-newsletters .headlines {
+    padding: 20px 0;
+    font-size: 20px;
+    width: 80%;
+  }
+  .weekly-newsletters-con .weekly-newsletters .jessica-andrews {
+    width: 80px;
+    padding-top: 20px;
+    height: 80px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .weekly-newsletters-con .weekly-newsletters .jessica-andrews .jessica-andrews-img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  .weekly-newsletters-con .weekly-newsletters .jessica-andrews .jessica {
+    padding-left: 20px;
+  }
+  .weekly-newsletters-con .weekly-newsletters .jessica-andrews .jessica span {
+    display: block;
+    font-size: 18px;
+  }
+  .weekly-newsletters-con .weekly-newsletters .jessica-andrews .jessica span.bold {
+    font-weight: bold;
+  }
+  .card-container {
+    width: 100%;
+    padding: 80px 80px;
+    max-width: 100%;
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 30px;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .card-container .card .card-body h1 {
+    padding: 15px 0;
+  }
+  .card-container .card .card-body p {
+    padding-bottom: 8px;
+    font-size: 20px;
+  }
+  .card-container .card .card-body .spencer-david {
+    width: 80px;
+    padding-top: 20px;
+    max-height: 500px;
+    height: 80px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card-container .card .card-body .spencer-david .spencer-david-img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 60px;
+    max-height: 380px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  .card-container .card .card-body .spencer-david .spencer {
+    padding-left: 20px;
+  }
+  .card-container .card .card-body .spencer-david .spencer span {
+    display: block;
+    font-size: 18px;
+  }
+  .card-container .card .card-body .spencer-david .spencer span.bold {
+    font-weight: bold;
+  }
+  footer div {
+    padding: 0 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (min-width: 1000px) {
+  .card-container {
+    width: 100%;
+    padding: 80px 80px;
+    max-width: 100%;
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 30px;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .card-container .card .card-body h1 {
+    padding: 15px 0;
+  }
+  .card-container .card .card-body p {
+    padding-bottom: 8px;
+    font-size: 20px;
+  }
+  .card-container .card .card-body .spencer-david {
+    width: 80px;
+    padding-top: 20px;
+    height: 80px;
+    width: 100%;
+    max-height: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card-container .card .card-body .spencer-david .spencer-david-img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  .card-container .card .card-body .spencer-david .spencer {
+    padding-left: 20px;
+  }
+  .card-container .card .card-body .spencer-david .spencer span {
+    display: block;
+    font-size: 18px;
+  }
+  .card-container .card .card-body .spencer-david .spencer span.bold {
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 1110px) {
+  .weekly-newsletters-con .img-con {
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+  }
+  .weekly-newsletters-con .weekly-newsletters {
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+  }
+}
+/*# sourceMappingURL=style.css.map */
